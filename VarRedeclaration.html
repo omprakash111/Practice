@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var tolerates redeclarations</title>
+</head>
+<body>
+    <pre>
+        var user = "Pete";
+
+var user = "John"; // this "var" does nothing (already declared)
+// ...it doesn't trigger an error
+
+alert(user); // John
+
+example other
+let user;
+let user; // SyntaxError: 'user' has already been declared
+    </pre>
+    <script>
+        var user = "Pete";
+
+var user = "John"; // this "var" does nothing (already declared)
+// ...it doesn't trigger an error
+
+alert(user); // John
+    </script>
+</body>
+</html>
