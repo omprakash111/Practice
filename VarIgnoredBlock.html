@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remember, code blocks are ignored</title>
+</head>
+<body>
+    <pre style="color:rgb(38, 221, 197)">
+        function sayHi() {
+            phrase = "Hello"; // (*)
+          
+            if (false) {
+              var phrase;
+            }
+          
+            alert(phrase);
+          }
+          sayHi();
+    </pre>
+    <script>
+        function sayHi() {
+  phrase = "Hello"; // (*)
+
+  if (false) {
+    var phrase;
+  }
+
+  alert(phrase);
+}
+sayHi();
+    </script>
+</body>
+
+</html>
