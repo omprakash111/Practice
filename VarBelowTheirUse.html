@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var variables can be declared below their use</title>
+</head>
+<body>
+    <pre>
+        function sayHi() {
+            phrase = "Hello";
+          
+            alert(phrase);
+          
+            var phrase;
+          }
+          sayHi();
+    </pre>
+    <script>
+        function sayHi() {
+  phrase = "Hello";
+
+  alert(phrase);
+
+  var phrase;
+}
+sayHi();
+    </script>
+</body>
+</html>
