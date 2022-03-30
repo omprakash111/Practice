@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarations are hoisted,but assignments as not.</title>
+</head>
+<body>
+    <pre>
+        function sayHi() {
+            alert(phrase);//undefined
+          
+            var phrase = "Hello";
+          }
+          
+          function sayHi2() {
+            var phrase; // declaration works at the start...
+          
+            alert(phrase); // undefined
+          
+            phrase = "Hello"; // ...assignment - when the execution reaches it.
+          }
+          
+          sayHi();
+          sayHi2();
+        
+    </pre>
+    <script>
+        function sayHi() {
+  alert(phrase);
+
+  var phrase = "Hello";
+}
+function sayHi2() {
+  var phrase; // declaration works at the start...
+
+  alert(phrase); // undefined
+
+  phrase = "Hello"; // ...assignment - when the execution reaches it.
+}
+
+sayHi();
+
+sayHi2();
+    </script>
+</body>
+</html>
