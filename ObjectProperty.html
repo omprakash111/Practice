@@ -8,22 +8,26 @@
 <body><pre>
     let user = {     // an object
         name: "John",  // by key "name" store value "John"
-        age: 30        // by key "age" store value 30
+        age: 30 ,       // by key "age" store value 30
+        "likes birds": true  // multiword property name must be quoted
       };
       
       // get property values of the object:
 alert( user.name ); // John
 alert( user.age ); // 30
+alert( user["likes birds"] );
     </pre>
     <script>
     let user = {     // an object
         name: "John",  // by key "name" store value "John"
-        age: 30        // by key "age" store value 30
+        age: 30 ,       // by key "age" store value 30
+        "likes birds": true  // multiword property name must be quoted
       };
       
       // get property values of the object:
 alert( user.name ); // John
 alert( user.age ); // 30
+alert( user["likes birds"] );
       </script>
 </body>
 </html>
