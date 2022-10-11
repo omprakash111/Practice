@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>automatic semicolon insertion</title>
+</head>
+<body>
+    <script>
+        alert("JavaScript")
+        alert("Om") //Here, JavaScript interprets the line break as an “implicit” semicolon. This is called an automatic semicolon insertion.
+        alert(3 +
+            1
+            +5);            //In most cases, a newline implies a semicolon. But “in most cases” does not mean “always”!
+    </script>
+    <pre>
+     alert("JavaScript")
+     alert("Om") //Here, JavaScript interprets the line break as an “implicit” semicolon. This is called an automatic semicolon insertion.
+     alert(3 +
+         1
+         +5);            //In most cases, a newline implies a semicolon. But “in most cases” does not mean “always”! 9 result
+         </pre>
+</body>
+</html>
