@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redeclation var and let</title>
+</head>
+<body>
+    <!--first script-->  
+    <script>
+        var a=10;
+        var a=8;
+        alert(a);//working and result 8
+    </script>
+    
+    <!--second script -->
+    <script>
+        let b=7;
+        let b=9;// In case of let redeclaration is wrong.
+        alert(b);
+    </script> 
+    
+</body>
+</html>
