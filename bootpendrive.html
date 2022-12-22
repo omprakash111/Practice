@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendrive bootable code</title>
+</head>
+<body>
+    <p>Insert pendrive and then open cmd</p>
+    <p>
+        1.Diskpart <br> 
+        next <mark >yes</mark> option choice in window appear<br>
+        2.list disk <br>
+        3.select disk 1  <br><!--choice the one that makes disk bootable -->
+        4.clean<br>
+        5.create partition primary<br>
+        6.select partition 1<br>
+        7.format=fs ntfs quick<br>
+        8.active<br>
+        9.exit <br>
+
+
+    </p>
+    <p>Now copy all the data from the OS(Windows/Linux/etc.) installation disk to your USB drive that is just been made bootable.</p>
+    
+</body>
+</html>
