@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.BigInt datatype in js</title>
+</head>
+<body>
+    <p>
+        In javascript the "number" type cannot safety represent integer values larger that <br>
+         ( 2<sup>53</sup> -1) or less than -(2<sup>53</sup> -1) for negatives.
+
+    </p>
+    <p>
+
+    </p>
+    <script>
+        const big=34535456676734345553336n;//
+        console.log(big + 1n);//34535456676734345553336n
+        alert(big + 1n);//34535456676734345553336 both same
+    </script>
+</body>
+</html>
