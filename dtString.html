@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in javascript</title>
+
+</head>
+<body>
+    <p>
+        A string in javascript must be surrounded by quotes.
+        <br>
+        In javascript , there are 3 types of quotes.
+        <ol start="1" type="i">
+            <li>Double quotes :"hello"</li>
+            <li>Single quotes: 'hello'</li>
+            <li>Backticks:`hello`</li>
+
+        </ol>
+
+    </p>
+    <pre>
+        code 1:
+        let str="Hello";
+        let str2='single quotes';
+        let str3=`can embed another ${str} ${3+4}`;
+        //Backticks are "extended functionality" quotes. They allow us to embed variable and expression into a string by wrapping them in ${...}
+        alert(str);
+        alert(str2);
+        alert(str3);
+    </pre>
+
+    <pre>
+        code 2:
+        let name="om prakash";
+        alert(`hello ,${name}`);
+    </pre>
+    <script>
+        let str="Hello";
+        let str2='single quotes';
+        let str3=`can embed another ${str} ${3+4}`;
+        //Backticks are "extended functionality" quotes. They allow us to embed variable and expression into a string by wrapping them in ${...}
+        alert(str);
+        alert(str2);
+        alert(str3);
+
+
+    </script>
+
+
+    <script>
+       let name="om prakash";
+       alert(`hello ,${name}`);
+    </script>
+</body>
+</html>
