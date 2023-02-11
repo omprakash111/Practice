@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object datatype in javascript</title>
+</head>
+<body>
+    <p>
+        All other types are called "primitive" beacause their values can contain only a single thing. <br>
+        In contrast, objects are used to store collections of data and more complex entities. <br>
+
+    </p>
+    
+    <pre>
+        code 1:
+            //An empty object ("empty cabinet") can be created using one of two syntaxes:
+            let user= new object();//"object constructor" synatax
+            let users={};//"object literal " syntax
+    
+        
+    code 2:
+        
+         //we can immediately put some properties into {...} as "Key :value" pairs:
+             let stud={                       
+                       name : "om prakash",
+                       age : 22
+                       };
+    
+    code 3:
+            //Property values are accessible using the dot notation:
+            alert(users.name);//om prakash
+            alert(users.age);//22
+        
+    </pre>
+    <script>
+        //An empty object ("empty cabinet") can be created using one of two syntaxes:
+        let user= new object();//"object constructor" synatax
+        let users={};//"object literal " syntax
+
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        //we can immediately put some properties into {...} as "Key :value" pairs:
+        let stud={                       
+            name : "om prakash",
+            age : 22
+        };
+     </script>
+
+
+
+      <script>
+        //Property values are accessible using the dot notation:
+        alert(stud.name);//om prakash
+        alert(stud.age);//22
+    </script>
+
+
+       <script>
+        //add the property in object 
+        stud.roll=1;
+        alert(stud.roll);
+       </script>
+
+       <script>
+        //delete the property in object 
+         delete stud.age;
+       </script>
+</body>
+</html>
