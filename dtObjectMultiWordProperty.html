@@ -28,7 +28,32 @@
         
         
     </pre>
-
+    <pre>
+        code 2:
+            let student={
+                name:"om prakash",
+                age:23
+            };
+            let keys="name";
+            //property access by variable
+            alert(student.name);// correct o/p om prakash
+            alert(student.keys);//undefined because if we want access by variable then use square bracket
+            alert(student[keys]);//output om prakash
+         
+    </pre>
+     <pre>
+        Code 3:
+            //property access by  variable 
+            let stud={
+                name:"om prakash",
+                age:22
+            };
+    
+            let key=prompt("what do you want to know about the user?","name");
+            //access by variable
+            alert(stud[key]);//if key =name  then result we get om prakash 
+        
+     </pre>
     <script>
         let user={
 
@@ -48,5 +73,32 @@
         alert(user["likes birds"]);//undefined
     </script>
     
+
+
+
+    <script>
+        //property access by  variable 
+        let stud={
+            name:"om prakash",
+            age:22
+        };
+
+        let key=prompt("what do you want to know about the user?","name");
+        //access by variable
+        alert(stud[key]);//if key =name  then result we get om prakash 
+    </script>
+
+
+     <script>
+        let student={
+            name:"om prakash",
+            age:23
+        };
+        let keys="name";
+        //property access by variable
+        alert(student.name);// correct o/p om prakash
+        alert(student.keys);//undefined because if we want access by variable then use square bracket
+        alert(student[keys]);//output om prakash
+     </script>
 </body>
 </html>
