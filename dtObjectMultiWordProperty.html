@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiword property names in object</title>
+</head>
+<body>
+
+    <pre>
+        code 1:
+            let user={
+    
+                name:"om prakash",
+                age:22,
+                "likes birds":true //multiword property name must be quotes
+            };
+             
+            //set
+            user["likes birds"]=true;//above line i am assign the user["likes birds"] value but both are same statement that mean single property or single key:value pair
+    
+            //get
+            alert(user["likes birds"]);//true
+    
+            //delete
+            delete user["likes birds"];//delete the property by use the delete operator
+            alert(user["likes birds"]);//undefined
+        
+        
+    </pre>
+
+    <script>
+        let user={
+
+            name:"om prakash",
+            age:22,
+            "likes birds":true //multiword property name must be quotes
+        };
+         
+        //set
+        user["likes birds"]=true;//above line i am assign the user["likes birds"] value but both are same statement that mean single property or single key:value pair
+
+        //get
+        alert(user["likes birds"]);//true
+
+        //delete
+        delete user["likes birds"];
+        alert(user["likes birds"]);//undefined
+    </script>
+    
+</body>
+</html>
