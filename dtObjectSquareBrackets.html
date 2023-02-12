@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square bracket computed properties</title>
+</head>
+<body>
+    <p>
+        We can use square brackets in an object literal, <br>
+        when creating an object.That's called computed properties. <br>
+    </p>
+ 
+
+    <pre>
+        code 1:
+            let fruit =prompt("Which fruit to buy ?","apple");
+    
+            let bag={
+                [fruit]:5//the name of the property is taken from the variable fruit
+            };
+            alert(bag.apple);
+            
+        
+    
+        Code 2:
+            //same code concept of above
+            let fruits =prompt("which fruits to buy ?","apple");//we can change fruits instead of fruit because multi redeclaration is not allow in let
+             
+            let bags={};
+            //take property name from the fruit variable
+            bags[fruits]=5;
+            alert(bags.apple);//5
+            alert(bags.b);//undefined
+    
+
+        code 3:
+          //concatenated the variable and string in square bracket in object of key part
+            let toy="car";
+    
+            let box={
+                [toy+'key']:2//box.carkey=2
+            };
+            alert(box.carkey);//2
+        
+        
+    </pre>
+
+
+    <script>
+        let fruit =prompt("Which fruit to buy ?","apple");
+
+        let bag={
+            [fruit]:5//the name of the property is taken from the variable fruit
+        };
+        alert(bag.apple);
+        
+    </script>
+
+    <script>
+        //same code of above
+        let fruits =prompt("which fruits to buy ?","apple");//we can change fruits instead of fruit because multi redeclaration is not allow in let
+         
+        let bags={};
+        //take property name from the fruit variable
+        bags[fruits]=5;
+        alert(bags.apple);//5
+        alert(bags.b);//undefined
+
+    </script>
+
+
+
+
+    <script>
+        let toy="car";
+
+        let box={
+            [toy+'key']:2//box.carkey=2
+        };
+        alert(box.carkey);//2
+    </script>
+</body>
+</html>
