@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property names limitations in object</title>
+</head>
+<body>
+    <p>
+        As we already know , a variable cannot have a name eual to one of <br> 
+        language -reserved word like "for", "let","return" etc. <br> 
+        
+    </p>
+    <p>But for an object property, there's no such restriction:</p>
+
+    <pre>
+        code 1:
+            let obj={
+                for:2,
+                let:8,
+                return:2
+            };
+    
+            alert(obj.for+obj.let+obj.return);//12
+        
+    
+        code 2:
+            //Other types are automatically converted to strings.
+            let object={
+                0:"test",//Same as "0":"test"
+                name:"op"
+            };
+    
+            //Both alerts access the same property(the names 0 is converted to string "0")
+            alert(object["0"]);//test
+            alert(object[0]);//test(same property)
+            alert(object[name]);//undefined
+        
+        
+    </pre>
+
+
+
+    <script>
+        let obj={
+            for:2,
+            let:8,
+            return:2
+        };
+
+        alert(obj.for+obj.let+obj.return);//12
+    </script>
+
+    <script>
+        //Other types are automatically converted to strings.
+        let object={
+            0:"test",//Same as "0":"test"
+            name:"op"
+        };
+
+        //Both alerts access the same property(the names 0 is converted to string "0")
+        alert(object["0"]);//test
+        alert(object[0]);//test(same property)
+        alert(object[name]);//undefined
+    </script>
+    
+
+</body>
+</html>
