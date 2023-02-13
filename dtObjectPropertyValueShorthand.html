@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property value shorthand in object</title>
+</head>
+<body>
+    <p>In real code,we often use existing variables as values for property names.</p>
+
+
+    <script>
+        function makeUser(name,age){
+            return{
+                name,//same as name:name
+                age//same as age:age
+            };
+        }
+
+
+        let user=makeUser("om prakash",22);
+        alert(user.age);//22
+
+
+    </script>
+    
+
+    <script>
+        function car(name){
+            return{
+                name,//same as name:name
+                modal:707
+            };
+        }
+
+        let owner=car("Ford");
+        alert(owner.name);//Ford
+        alert(owner.modal);//707
+    </script>
+</body>
+</html>
