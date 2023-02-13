@@ -7,6 +7,44 @@
 </head>
 <body>
     
+    <pre>
+        code 1:
+        
+            let codes={
+                "49":"Germany",
+                "41":"Switzerland",
+                "44":"Great Britain",
+                j:"j",
+                //..,
+                "1":"USA"
+    
+            };
+    
+            for(let code in codes){
+    
+                alert(code);//1,41,44,49,j
+            }
+    
+            //The phone codes go in the ascending sorted order, because they are integers. So we see 1, 41, 44, 49. 
+            //It is also follow integer properties
+        
+    
+        Code 2:
+            //integer properties
+            /* The “integer property” term here means a string that can be converted to-and-from an integer without a change.
+    
+             So, "49" is an integer property name, because when it’s transformed to an integer number and back, 
+             it’s still the same.But "+49" and "1.2" are not:
+                */
+    
+    
+                // Number(...) explicitly converts to a number
+                // Math.trunc is a built-in function that removes the decimal part
+                alert( String(Math.trunc(Number("49"))) ); // "49", same, integer property
+                alert( String(Math.trunc(Number("+49"))) ); // "49", not same "+49" ⇒ not integer property
+                alert( String(Math.trunc(Number("1.2"))) ); // "1", not same "1.2" ⇒ not integer property
+    
+    </pre>
     <script>
         let codes={
             "49":"Germany",
