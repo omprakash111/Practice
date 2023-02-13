@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property existence test, "in" operator</title>
+</head>
+<body>
+    <script>
+        //a non-existing property just return undefined
+        let user={};
+        alert(user.noSuchProperty === undefined);//true mean "no such property"
+    </script>
+
+    <script>
+        //There's also a special operator "in" for that
+        let object={
+            name:"om prakash",
+            age:22
+        };
+
+        alert("key" in object);//false
+        alert("age" in object);//true
+        /*Please note that on the left side of in 
+        there must be a property name.
+         That’s usually a quoted string. */
+    </script>
+    
+</body>
+</html>
