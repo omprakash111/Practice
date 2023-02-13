@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered like an object</title>
+</head>
+<body>
+    
+    <script>
+        let codes={
+            "49":"Germany",
+            "41":"Switzerland",
+            "44":"Great Britain",
+            //..,
+            "1":"USA"
+        };
+
+        for(let code in codes){
+
+            alert(code);//1,41,44,49
+        }
+    </script>
+</body>
+</html>
