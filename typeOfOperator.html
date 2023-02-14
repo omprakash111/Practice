@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeof operator in js</title>
+</head>
+<body>
+    <script>
+        let store;
+        store= typeof undefined ;//"undefined"
+        alert(store);
+
+        store= typeof 0 ;//"number"
+        alert(store);
+
+        store= typeof 10n//"bigInt"
+        alert(store);
+
+        store= typeof true // "boolean"
+        alert(store);
+        
+        store=typeof "om" //"string"
+        alert(store);
+
+        store= typeof Symbol("id")//symbol
+        alert(store);
+        
+        store= typeof Math  //"object"  built-in object
+        alert(store);
+
+        store= typeof null // "object" but is special own datatype null
+        alert(store);
+
+        store=typeof alert// "function" but function is not any data type . Alert is belong to object type
+        alert(store);
+        
+    </script>
+    
+</body>
+</html>
