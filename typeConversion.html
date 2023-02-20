@@ -4,6 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Type conversions</title>
+    <style>
+        tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+    </style>
 </head>
 <body>
     <p>
@@ -27,5 +32,63 @@
     alert(typeof value);//string
     </script>
 
+
+    <p>
+        <h3>Numeric conversion</h3>
+        Numeric conversion is mathematical function and expressions happens automatically .<br>
+        
+        <table>
+            <tr>
+                <th>Value</th>
+                <th>Becomes...</th>
+            </tr>
+
+            <tr>
+                <td>undefined</td>
+                <td>NaN</td>
+            </tr>
+
+            <tr>
+                <td>
+                    null
+                </td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>True or False</td>
+                <td>1 or 0</td>
+            </tr>
+
+            <tr>
+                <td>String</td>
+                <td>Whitespaces (include spaces, tabs \t ,newlines \n etc.) from the start and end are removed.If the remaining string is empty, the result is 0. otherwise,the number is "read" from the string. An error give NaN.</td>
+            </tr>
+        </table>
+    </p>
+
+    <script>
+        alert("6"/"2"); //3
+    </script>
+
+     <pre> code 2:
+        let str="123.76";//string type
+        alert(typeof str);//string
+        
+        str=Number(str);
+        alert(typeof str);//number Number function convert either int or float from string
+        alert(str);//123.76
+
+     </pre>
+    <script>
+        let str="123.76";//string type
+        alert(typeof str);//string
+        
+        str=Number(str);
+        alert(typeof str);//number Number function convert either int or float from string
+        alert(str);//123.76
+
+         
+    </script>
 </body>
 </html>
